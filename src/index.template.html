@@ -656,7 +656,7 @@
       const url = `${SUPABASE_URL}/storage/v1/object/${bucket}/${path}`;
       const xhr = new XMLHttpRequest();
       xhr.open('POST', url);
-      const _tok = (JSON.parse(localStorage.getItem('sb-tsyhioxzzhlqldhjztbx-auth-token') || '{}').access_token) || SUPABASE_ANON_KEY;
+      const _tok = (JSON.parse(localStorage.getItem('galeri-suara-auth') || '{}').access_token) || SUPABASE_ANON_KEY;
 xhr.setRequestHeader('Authorization', `Bearer ${_tok}`);
       xhr.setRequestHeader('apikey', SUPABASE_ANON_KEY);
       xhr.setRequestHeader('x-upsert', 'false');
